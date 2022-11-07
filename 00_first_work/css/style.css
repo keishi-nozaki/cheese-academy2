@@ -1,0 +1,555 @@
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body {
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 16px;
+}
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+
+body {
+	width: 1200px;
+}
+
+.title_box {
+	background: url(../img/mainbg.png);
+	background-size: cover;
+	background-position: center;
+	color: azure;
+	height: 250px;
+}
+
+.title_box {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+h1 {
+	font-size: 48px;
+}
+
+.title_box p {
+	font-size: 30px;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.about {
+	margin-top: 120px;
+	margin-bottom: 24px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	color: darkorange;
+}
+
+.cheese-academy {
+	margin-bottom: 64px;
+}
+
+.about_text {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+}
+
+.cheese-academy-ha {
+	margin-bottom: 40px;
+}
+
+.sonnaomoikara {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.cheese_syokunin {
+	margin-bottom: 80px;
+}
+
+.wrap {
+	display: flex;
+	overflow: hidden;
+	margin-bottom: 64px;
+}
+
+.slideshow {
+	display: flex;
+	animation: loop-slide 10s infinite linear 1s both;
+}
+
+@keyframes loop-slide {
+	from {
+		transform: translateX(0);
+	}
+
+	to {
+		transform: translateX(-100%);
+	}
+}
+
+.COURSE {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	font-size: 24px;
+}
+
+.mikeiken {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 64px;
+}
+
+.course_01 {
+	display: flex;
+}
+
+.course_01 div {
+	width: 50%;
+}
+
+.course_01_img img {
+	width: 100%;
+}
+
+.course_01_text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.course_01_text div {
+
+	width: 80%;
+}
+
+.honnkakuteki {
+	margin-bottom: 40px;
+	font-weight: bold;
+}
+
+.course_02 {
+	display: flex;
+}
+
+.course_02 div {
+	width: 50%;
+}
+
+.course_02 div img {
+	height: 404px;
+}
+
+.course_02_text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.hituyouna {
+	margin-bottom: 40px;
+	font-weight: bold;
+}
+
+.course_03 {
+	display: flex;
+}
+
+.course_03 div {
+	width: 50%;
+}
+
+.course_03_img img {
+	width: 100%;
+}
+
+.course_03_text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.course_03_text div {
+
+	width: 80%;
+}
+
+.sotugyouseisaku {
+	margin-bottom: 40px;
+	font-weight: bold;
+}
+
+.NEWS {
+	margin-top: 64px;
+	color: coral;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+
+
+}
+
+.NEWS_text {
+	margin-top: 20px;
+	margin-bottom: 64px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.NEWS_image_date_kosuge {
+	display: flex;
+
+}
+
+.NEWS_image_date_kosuge div div img {
+	width: 100%;
+}
+
+.NEWS_image_date_kosuge_middle {
+	margin-left: 32px;
+	margin-right: 32px;
+
+}
+
+
+.date {
+	margin-top: 32px;
+	margin-bottom: 24px;
+}
+
+.ue {
+	margin-left: 50px;
+}
+
+.shita {
+	margin-right: 50px;
+}
+
+.btn-square {
+	text-align: center;
+	margin-top: 56px;
+	width: 300px;
+	height: 60px;
+	display: inline-block;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	background: #668ad8;
+
+	color: #FFF;
+	border-bottom: solid 4px #627295;
+	border-radius: 3px;
+}
+
+.btn-square:active {
+
+	-webkit-transform: translateY(4px);
+	transform: translateY(4px);
+
+	border-bottom: none;
+}
+
+.more_btn {
+	display: flex;
+	justify-content: center;
+}
+
+.ACCESS {
+	margin-top: 100px;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px;
+	margin: 24px;
+}
+
+.kaisya {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 64px;
+}
+
+iframe {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 300px;
+}
+
+.syozaiti {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.syozaiti {
+	margin-top: 64px;
+	margin-bottom: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: inherit;
+
+}
+
+.syozaiti div p {
+	margin-top: 24px;
+}
+
+.syozaitinomigi {
+	margin-left: 48px;
+}
+
+.ACCESS_all {
+	background-color: #fafafa;
+
+}
+
+nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: inherit;
+}
+
+.CONTACT {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 80px;
+}
+
+.CONTACT_text {
+	font-weight: bold;
+	font-size: 30px;
+	margin-bottom: 15px;
+}
+
+.sonzaishinai {
+	margin-top: 32px;
+}
+
+
+
+.zehiichido {
+	margin-top: 15px;
+}
+
+.name_box {
+	display: flex;
+	justify-content: center;
+}
+
+nav {
+	width: 1200px;
+	display: flex;
+	height: 80px;
+	border: 2px solid #efefef;
+}
+
+.nav_hidari {
+	width: 600px;
+	display: flex;
+	justify-content: left;
+}
+
+.nav_hidari li img {
+	width: 70%;
+}
+
+.nav_migi {
+	width: 600px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	font-size: 21px;
+}
+
+.namae {
+	display: flex;
+	justify-content: center;
+	ma
+}
+
+.name_box_make {
+	display: block;
+	padding: 0%;
+	width: 328px;
+	height: 36px;
+	border: 1px solid #bfbfbf;
+}
+
+
+
+.name_box {
+	margin-left: 120px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+	margin-bottom: 32px;
+}
+
+.name_box_make_2 {
+	display: block;
+	padding: 0%;
+	width: 328px;
+	height: 36px;
+	border: 1px solid #bfbfbf;
+	margin-top: 24px;
+	margin-bottom: 24px;
+}
+
+.namae1 {
+	margin-bottom: 40px;
+}
+
+.kana {
+	margin-bottom: 37px;
+}
+
+.adoresu {
+	margin-bottom: 40px;
+}
+
+.douki {
+	margin-bottom: 150px;
+}
+
+.name_box_make_3 {
+	display: block;
+	padding: 0%;
+	width: 328px;
+	height: 36px;
+	border: 1px solid #bfbfbf;
+	margin-bottom: 50px;
+}
+
+.checkbox {
+	display: flex;
+	justify-content: left;
+	align-items: baseline;
+	flex-direction: column;
+}
+
+.syousai {
+	display: flex;
+	justify-content: center;
+
+}
+
+.syousai_box {
+	display: block;
+	padding: 0%;
+	width: 328px;
+	height: 108px;
+	border: 1px solid #bfbfbf;
+	margin-left: 120px;
+}
+
+.start_btn {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 100px;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 54px;
+	background-color: #707070;
+}
+
+.modoru-square {
+	text-align: center;
+	margin-top: 56px;
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	background: yellowgreen;
+
+	color: #FFF;
+	border-bottom: solid 4px #627295;
+	border-radius: 3px;
+}
+
+.modoru-square:active {
+
+	-webkit-transform: translateY(4px);
+	transform: translateY(4px);
+
+	border-bottom: none;
+}
+
+.modoru_btn {
+	display: flex;
+	justify-content: center;
+
+	margin-bottom: 30px;
+}
+
+
+/*どの部分のcssに対して
+命令をしているのかコメントを
+記載しよう！
+---------------------*/
+
+
+/*
+---------------------*/
+
+
+
+/*
+---------------------*/
+
+
+
+/*
+---------------------*/
+
+
+
+/*
+---------------------*/
